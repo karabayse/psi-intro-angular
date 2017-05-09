@@ -13,6 +13,20 @@
 
       <input ng-model="first.name" type="text" name="" value="">
       {{first.name}}
+
+   <!-- I grabbed this from W3 Schools to test it out.
+   It sounds as though ng-app defines an Angular app.
+   The ng-model directive example above, from class,
+   binds the value of HTML controls (input, select,
+   textarea)-->
+   <div ng-app="">
+     <p>Name : <input type="text" ng-model="name"></p>
+       <h1>Hello {{name}}</h1>
+
+   <div ng-controller="ourSecondController as second">
+     {{second.thingOne}}
+     {{second.thingTwo}}
     </div>
+    
   </body>
 </html>
